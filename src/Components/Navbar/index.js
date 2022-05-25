@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="w-full z-40">
       <div className="nav-container">
-        <div className="text-white font-bold text-lg">MIA HANIFAH</div>
+        <div className="text-white font-bold text-lg">MIA HANIFAH08</div>
         <div className={`navbar-list ${isActive ? "active" : ""}`}>
           <div className="navbar-items">
             <Link activeClass="active" to="Home" spy={true} smooth={true} onClick={menuBarHandler} offset={-100} duration={500} className="mx-4 hover:scale-110 cursor-pointer">
