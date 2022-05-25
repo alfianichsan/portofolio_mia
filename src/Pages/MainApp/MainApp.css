@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  section {
+    @apply w-full flex flex-wrap items-center justify-center my-2 pb-10;
+  }
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-container {
+    @apply h-20 w-full bg-rose-600 flex flex-row items-center px-4 justify-around z-40;
+  }
+  .navbar-list {
+    @apply text-white font-normal text-base flex;
+  }
+  .navbar-items {
+    @apply flex flex-row justify-between;
+  }
+  .menu-bars {
+    @apply hidden;
+  }
+  @media only screen and (max-width: 768px) {
+    .nav-container {
+      @apply justify-between;
+    }
+    .navbar-list {
+      @apply absolute bg-rose-500 opacity-95 h-screen top-20 -left-full  w-9/12 z-20 shadow-2xl shadow-black transition-all ease-in duration-300;
+    }
+    .navbar-list.active {
+      @apply left-0 transition-all ease-out duration-300;
+    }
+    .navbar-items {
+      @apply flex flex-col justify-start items-center w-full pt-8;
+    }
+    .navbar-items a {
+      @apply my-8 uppercase font-semibold text-xl;
+    }
+    .menu-bars {
+      @apply flex focus:ring-1 rounded-md ring-white;
+    }
+  }
+}
