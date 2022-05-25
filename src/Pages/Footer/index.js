@@ -21,7 +21,6 @@ const Footer = () => {
           <TwitterIcon />
         </a>
       </div>
-      Footer
     </div>
   );
 };
